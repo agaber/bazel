@@ -1,0 +1,6 @@
+.DS_Store
+.ijwb
+bazel-bazel
+bazel-bin
+bazel-out
+bazel-testlogs

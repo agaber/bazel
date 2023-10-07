@@ -1,0 +1,10 @@
+directories:
+  java
+  javatests
+targets:
+  java/...
+  javatests/...
+test_sources:
+  javatests/*
+workspace_type: java
+java_language_level: jdk_17
