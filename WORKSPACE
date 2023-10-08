@@ -1,3 +1,6 @@
+# Most of this comes from here:
+# https://github.com/junit-team/junit5-samples/tree/main/junit5-jupiter-starter-bazel
+
 CONTRIB_RULES_JVM_SHA = "548f0583192ff79c317789b03b882a7be9b1325eb5d3da5d7fdcc4b7ca69d543"
 CONTRIB_RULES_JVM_VERSION = "0.9.0"
 JUNIT_JUPITER_VERSION = "5.10.0"
@@ -38,6 +41,7 @@ maven_install(
     ],
 )
 
+# Source: https://github.com/bazel-contrib/rules_jvm
 http_archive(
     name = "contrib_rules_jvm",
     sha256 = CONTRIB_RULES_JVM_SHA,
@@ -50,7 +54,3 @@ contrib_rules_jvm_deps()
 
 load("@contrib_rules_jvm//:setup.bzl", "contrib_rules_jvm_setup")
 contrib_rules_jvm_setup()
-
-# https://github.com/bmuschko/bazel-examples
-# https://github.com/bazelbuild/bazel
-# https://github.com/bazel-contrib/rules_jvm
