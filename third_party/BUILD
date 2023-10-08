@@ -10,14 +10,6 @@ java_library(
 )
 
 java_library(
-    name = "junit4",
-    exports = [
-        "@maven//:junit_junit",
-        "@maven//:org_hamcrest_hamcrest_core",
-    ],
-)
-
-java_library(
     name = "junit5",
     exports = [
         artifact("org.junit.jupiter:junit-jupiter-api"),

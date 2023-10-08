@@ -1,12 +1,9 @@
-load("@contrib_rules_jvm//java:defs.bzl", "JUNIT5_DEPS", "java_test_suite")
+load("//:junit5.bzl", "junit5_test")
 
-java_test_suite(
+junit5_test(
     name = "tests",
-    size = "small",
     srcs = glob(["*.java"]),
-    package = "dev.agaber.bazel",
-    runner = "junit5",
-    runtime_deps = JUNIT5_DEPS,
+    test_package = "dev.agaber.bazel",
     deps = [
         "//java/dev/agaber/bazel",
         "//java/dev/agaber/common/testing",
