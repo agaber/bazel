@@ -24,12 +24,14 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_install(
     artifacts = [
+        "junit:junit:4.13.2",
         "org.assertj:assertj-core:3.24.2",
         "org.junit.platform:junit-platform-launcher:%s" % JUNIT_PLATFORM_VERSION,
         "org.junit.platform:junit-platform-reporting:%s" % JUNIT_PLATFORM_VERSION,
         "org.junit.jupiter:junit-jupiter-api:%s" % JUNIT_JUPITER_VERSION,
         "org.junit.jupiter:junit-jupiter-params:%s" % JUNIT_JUPITER_VERSION,
         "org.junit.jupiter:junit-jupiter-engine:%s" % JUNIT_JUPITER_VERSION,
+        "org.hamcrest:hamcrest-core:1.3",
     ],
     repositories = [
         "https://repo1.maven.org/maven2",
@@ -48,3 +50,7 @@ contrib_rules_jvm_deps()
 
 load("@contrib_rules_jvm//:setup.bzl", "contrib_rules_jvm_setup")
 contrib_rules_jvm_setup()
+
+# https://github.com/bmuschko/bazel-examples
+# https://github.com/bazelbuild/bazel
+# https://github.com/bazel-contrib/rules_jvm

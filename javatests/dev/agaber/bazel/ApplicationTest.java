@@ -5,6 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import dev.agaber.common.testing.FakeClock;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import java.time.LocalDate;
 
 final class ApplicationTest {
@@ -12,7 +13,8 @@ final class ApplicationTest {
 
   @BeforeEach
   void beforeEach() {
-    app = new Application(new FakeClock(LocalDate.of(2020, 1, 1)));
+    var clock = new FakeClock(LocalDate.of(2020, 1, 1));
+    app = new Application(clock);
   }
 
   @Test
