@@ -1,3 +1,6 @@
+# For more documentation, please visit https://ij.bazel.build/docs/project-views.html
+# Run 'Sync' after making changes to this file.
+
 directories:
   java
   javatests
