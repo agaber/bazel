@@ -12,14 +12,12 @@ include Turboreo, Nx, Rush, Yarn Workspace and PNPM Workspaces.
 
 [1]: https://en.wikipedia.org/wiki/Monorep]
 
-
 ## Links
 
 * https://bazel.build/
-* https://github.com/bmuschko/bazel-examples
 * https://github.com/bazelbuild/bazel
 * https://github.com/bazel-contrib/rules_jvm
-
+* https://github.com/bmuschko/bazel-examples
 
 ## Install (on Mac)
 
