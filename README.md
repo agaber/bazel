@@ -8,7 +8,7 @@ There are other open source solutions but Bazel seems to have the widest choice
 of programming languages. It is also quite complicated. In a fully JVM world, I
 would most likely recommend using a multi-project Maven or Gradle setup. Other
 popular frameworks seem to be mostly geared towards JavaScript/TypeScript. They
-include Turboreo, Nx, Rush, Yarn Workspace and PNPM Workspaces.
+include Turborepo, Nx, Rush, Yarn Workspace and PNPM Workspaces.
 
 [1]: https://en.wikipedia.org/wiki/Monorep]
 
